@@ -1,0 +1,53 @@
+.Deck {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.Deck form {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.cards {
+	position: relative;
+	display: grid;
+	width: 500px;
+	margin: 0 auto;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	color: black;
+}
+.cards li {
+    margin-top:10px;
+	position: relative;
+	display: flex;
+	height: 100px;
+	background: white;
+	border-radius: 10px;
+	border: 1px solid white;
+	align-items: center;
+	justify-content: center;
+}
+
+.cards li:hover {
+	background: #fedcba;
+}
+
+.cards li button {
+	position: absolute;
+	font-size: 16px;
+	top: 0;
+	right: 0px;
+	border: none;
+	background: none;
+}
+
+.cards li button:hover {
+	color: #ff0000;
+}
+.cards li button:active {
+	outline: none;
+	color: #ff8800;
+}
